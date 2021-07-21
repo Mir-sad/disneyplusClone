@@ -47,16 +47,17 @@ background: #090b13;
 display: flex;
 alighn-items: center;
 padding: 0 36px;
+overflow-x: hidden;
 `
 const Logo = styled.img`
-width:80px;
+width: 80px;
 
 `
 const NavMenu = styled.div`
 display: flex;
 flex: 1;
-margin-left:25px;
-align-items:center;
+margin-left: 25px;
+align-items: center;
 a {
     display: flex;
     align-items: center;
@@ -65,13 +66,13 @@ a {
     img {
         height: 20px;
     }
-    span{
+    span {
         font-size: 13px;
         letter-spacing: 1.42px;
         positon: relative;
 
         &:after {
-            content: "";
+            content: '';
             height: 2px;
             background: white;
             position: absolute;
@@ -81,13 +82,13 @@ a {
             opacity: 0;
             transform-origin: left center;
             trasition: all 258ns cubic-bezier(0.25, 0.46, 0.45, 0.94) 0s;
-            transform:scaleX(0);
+            transform: scaleX(0);
         }
     }
     &:hover {
-        span:after{
-            transform:scaleX(1);
-            opacity:1;
+        span:after {
+            transform: scaleX(1);
+            opacity: 1;
         }
     }
 
